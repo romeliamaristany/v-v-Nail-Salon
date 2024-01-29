@@ -149,7 +149,7 @@ nav{
 /*==================HOME=======================*/
 .home{
     background-image: linear-gradient(to top, rgb(181 163 175), rgb(46 49 65 / 0%)),
-                      url('assets/img/nails/background.PNG');
+                      url('../img/nails/background.PNG');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
