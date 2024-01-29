@@ -14,8 +14,8 @@ ScrollReveal().reveal('.title-scroll', {delay:100 , origin: 'right'})
 ScrollReveal().reveal('.diamond', {delay: 600 , origin: 'left'})
 ScrollReveal().reveal('.p-scroll', {delay:600 , origin: 'left'})
 ScrollReveal().reveal('.logo-img', {delay: 500, origin: 'rigth'})
-ScrollReveal().reveal('.img-salon', {delay:300 , origin:'left'})
-ScrollReveal().reveal('.img-desings', {delay:300, origin: 'rigth'})
+ScrollReveal().reveal('.img-salon', {delay:500 , origin:'left'})
+ScrollReveal().reveal('.img-desings', {delay:500, origin: 'rigth'})
 //ScrollReveal().reveal('.nail-price' , {delay:300, origin: 'bottom'})
 
 ///////////////////////////SHOW MENU/////////////////////////////////////////////
@@ -36,3 +36,16 @@ window.onscroll = () =>{
     menu.classList.remove('active')
     mainPage.classList.remove('blur')
 };
+
+//////////////////////////////CHANGE HEADER BACKGROUND///////////////////////////////////////////////
+window.addEventListener('scroll', ()=>{
+    let header = document.getElementById('header');
+    let appoinment = document.getElementById('appointment');
+    let headerApair = appoinment.getBoundingClientRect().top;
+
+    if(headerApair <=0 ){
+        header.classList.add('header-bg');
+    }else{
+        header.classList.remove('header-bg')
+    }
+})

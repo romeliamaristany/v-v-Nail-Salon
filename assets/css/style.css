@@ -76,6 +76,10 @@ header{
     width: 100%;
     padding: 10px;
     z-index: 100000;
+    height: 60px;
+}
+.header-bg{
+    background-color: var(--main-color);
 }
 .nails-name h3 a:hover{
     color: white;
@@ -145,7 +149,7 @@ nav{
 /*==================HOME=======================*/
 .home{
     background-image: linear-gradient(to top, rgb(181 163 175), rgb(46 49 65 / 0%)),
-                      url(/assets/img/nails/background.PNG);
+                      url('assets/img/nails/background.PNG');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -888,7 +892,20 @@ nav{
         font-size: 17px;
     }
 }
-@media (max-width: 495px){
+@media (max-width: 495px){   
+    header{
+        height: 50px;
+    }
+    .nails-name h3 a{
+        font-size: 16px;
+    }
+    .button-menu i {
+        font-size: 28px;
+    }
+    .button-menu{
+        padding: 0;
+        border: none;
+    }
     .appointment, .salon, .desings, .price {
         padding: 0 20% 50px 10%;
     }
@@ -1172,5 +1189,5 @@ nav{
     .salon-text p {
         width: 178px;
     }
-    
+
 }
