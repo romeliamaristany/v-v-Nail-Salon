@@ -8,32 +8,57 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!--================LINK BOXICONS===========================-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--================TRANSITIONS LINK===========================-->
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
+    <!--================HEADER===========================-->
+    <header>
+        <div class="nails-name">
+            <h3><a href="#home">Nails by V&V</a></h3>
+        </div>
+       
+        <div class="links">
+           <button class="button-menu" id="button-menu"> 
+               <i class='bx bx-menu' id="bx-menu"></i>
+           </button>
+        </div>
+    </header>
 
     <!--================NAVBAR===========================-->
+    <nav>  
+            <div class="menu" id="menu">
+                <div class="list">
+                    <h3>Menu</h3>
+                    <ul class="navbar">
+                        <li class="main-page-link"><a href="#home">Pág. Principal</a></li>
+                        <li><a href="">Salón V&V</a></li>
+                        <li><a href="">Diseños</a></li>
+                        <li><a href="#price">Precios</a></li>
+                        <li><a href="#contact">Contáctenos</a></li>
+                    </ul>
+                </div>
+                <div class="close-icon" id="close-icon">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+        
+    </nav>
 
-    <header>
-        <div class="bx bx-menu" id="menu-icon"></div>
-
-        <ul class="navbar">
-            <li><a href="#home">Pág. Principal</a></li>
-            <li><a href="">Salon V&V</a></li>
-            <li><a href="">Diseños</a></li>
-            <li><a href="">Precios</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-    </header>
-    
+    <div class="wrapper" id="wrapper">
+          
     <!--================HOME===========================-->
      <section class="home" id="home">
         <div class="home-text">
-            <i class='bx bx-diamond'></i>
-            <h1>Salón V&V</h1>
+            <img class="diamond" src="assets/img/icons/diamond-regular-24.png" alt="">
+            <h1 class="title-scroll">Salón V&V</h1>
             <br>
-            <p>Tenemos el diseño perfecto para tus uñas.</p>
+            <p class="p-scroll">Tenemos el diseño perfecto para tus uñas.</p>
         </div>
     </section>
+
+    <!--================APPOINMENT===========================-->
     <section class="appointment" id="appointment">
         <div class="appointment-text">
             <h3>¿QUIERES UNA CITA?</h3>
@@ -44,14 +69,14 @@
             </button>
         </div>
         <div class="appointment-img">
-            <img src="assets/img/icons/logo1.png" alt="">
+            <img class="logo-img" src="assets/img/icons/logo1.png" alt="">
         </div>
     </section>
-
+    
     <!--================SALON===========================-->
     <section class="salon" id="salon">
         <div class="salon-img">
-            <img src="assets/img/nails/unnasmarmoleado.JPG" alt="">
+            <img class="img-salon" src="assets/img/nails/unnasmarmoleado.JPG" alt="">
         </div>
         <div class="salon-text">
             <h3>Salón de manicura y pedicura</h3>
@@ -60,7 +85,7 @@
             <a href=""><i class='bx bx-chevron-right'></i>Ver imágenes</a>
         </div>
     </section>
-
+    
     <!--================DESINGS===========================-->
     <section class="desings" id="desings">
         <div class="desings-text">
@@ -69,7 +94,7 @@
             <a href=""><i class='bx bx-chevron-right'></i>Ver diseños</a>
         </div>
         <div class="desings-img">
-            <img src="assets/img/nails/unnasrosa.jpg" alt="">
+            <img class="img-desings" src="assets/img/nails/unnasrosa.jpg" alt="">
         </div>
     </section>
 
@@ -86,7 +111,7 @@
                 <h4>Manicura y pedicura con gel</h4>
                 <p>- Los deseños simples vienen incluidos con el precio</p>
                 <p>- +$10 Diseños complicados y en todas las uñas</p>
-                <button class="btn-1">
+                <button>
                     <a href="https://wa.me/17868179657?text=Hola,%20quiero%20agendar%20una%20cita%20para%20realizarme%20una%20manicura%20y%20pedicura%20con%20gel." target="_blank">Solicitar Servicio</a>
                 </button>
             </div>
@@ -108,7 +133,7 @@
                 <h4>Manicura con Apress</h4>
                 <p>- Los deseños simples vienen incluidos con el precio</p>
                 <p>- +$10 Diseños complicados y en todas las uñas</p>
-                <button class="btn-3">
+                <button>
                     <a href="https://wa.me/17868179657?text=Hola,%20quiero%20agendar%20una%20cita%20para%20realizarme%20una%20manicura%20con%20Apress." target="_blank">Solicitar Servicio</a>
                 </button>
 
@@ -186,12 +211,15 @@
            
 
            <div class="designer">
-            <p>Designed and develped by: <a href="https://www.instagram.com/rome_maristany/"> Rome Maristany</a></p>
+            <p>Designed and develped by: <a href="https://www.linkedin.com/in/romelia-maristany-1089052ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"> Rome Maristany</a></p>
            </div>
       </section>
    
+    </div>
 
-    <!--================LINK JS===========================-->
-    <script src="assets/js/script.js"></script>
+
+    
+     <!--================LINK JS===========================-->
+     <script src="assets/js/script.js"></script>
 </body>
 </html>
