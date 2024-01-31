@@ -1008,6 +1008,12 @@ nav{
 }
 */
 
+/*=========================RESET BACKGROUND ATTACHTMENT================================*/
+@media (max-width:700px){
+    .home{
+        background-attachment: unset;
+    }
+}
 @media (max-width:430px){
     section {
         padding: 0 10% 50px 10%;
@@ -1532,7 +1538,7 @@ nav{
         height: 55dvh;
     }
     .desings-text h3{
-        margin-top: 10px;
+        margin-top: 20px;
         margin-bottom: 10px;
     }
     .price-text{
@@ -1553,7 +1559,7 @@ nav{
 /*==================IPHONE 14 PRO=========================*/
 @media(max-width:395px){
     .home{
-        height: 65dvh;
+        height: 450px;
     }
     .appointment{
         height: 45dvh;
@@ -1605,7 +1611,7 @@ nav{
 /*=====================iPhone 12/13/14, 12/13 Pro=================================*/
 @media(max-width:390px){
     .home{
-        height: 65dvh;
+        height: 450px;
     }
     .appointment,
     .salon{
@@ -1618,4 +1624,10 @@ nav{
         margin-top: 20px;
     }
 
+}
+/*=====================IPHONE 11PRO=================================*/
+@media (max-width:375px){
+    .home{
+        height: 400px;
+    }
 }
