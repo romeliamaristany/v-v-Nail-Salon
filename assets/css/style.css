@@ -1016,6 +1016,9 @@ nav{
         padding: 0 10px 0 10px;
         height: 40px;
     }
+    .button-menu i:hover{
+        border: none;
+    }
     .home{
         padding-top: 25px;
         height: 55dvh;
@@ -1474,4 +1477,145 @@ nav{
     .designer p{
         font-size: 15px;
     }
+}
+
+
+/*==================IPHONE 14 PROMAX=========================*/
+@media(max-width: 430px){
+    .home{
+        height: 70dvh;
+    }
+    .appointment{
+        height: 40dvh;
+    }
+    .appointment-img img {
+        bottom: 3em;
+    }    
+    .salon{
+        height: 45dvh;
+    }
+    .appointment-text p,
+    .desings-text p,
+    .salon-text p,
+    .price-text p {
+        width: 350px;
+    } 
+    .nail-price,
+    .nail-price img {
+        width: 350px;
+    }
+    .nail-price h4,
+    .nail-price p{
+        width: 320px;
+    }
+        
+
+      
+}
+/*==================IPHONE 11=========================*/
+@media(max-width:415px){
+    .home{
+        height: 70dvh;
+    }
+    .appointment-img,
+    .appointment-text{
+        width: 350px;
+    }
+    .appointment-img img{
+        left: 5em;
+        bottom: 3em;
+    }
+    .salon{
+        height: 45dvh;
+    }
+    .desings{
+        height: 55dvh;
+    }
+    .desings-text h3{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .price-text{
+        width: 350px;
+    }
+    .nail-price{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+    }
+    .nail-price p{
+        width: 320px;
+    }
+    .about-us p {
+        width: 200px;
+    }    
+}
+/*==================IPHONE 14 PRO=========================*/
+@media(max-width:395px){
+    .home{
+        height: 65dvh;
+    }
+    .appointment{
+        height: 45dvh;
+    }
+    .appointment-img,
+    .appointment-text{
+        width: 350px;
+    }
+    .appointment-img img{
+        left: 5em;
+        bottom: 3em;
+    }
+    .appointment-text p,
+    .desings-text p,
+    .salon-text p,
+    .price-text p{
+        width: 300px;
+    }
+    .salon{
+        height: 45dvh;
+    }
+    .desings{
+        height: 55dvh;
+    }
+    .desings-text h3{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .nails-price,
+    .price-text{
+        width: 300px;
+    }
+    .nail-price{
+        display: flex;
+        flex-direction: column;
+    }
+    .nail-price,
+    .nail-price img{
+        width: 300px;
+    }
+    .nail-price h4,
+    .nail-price p{
+        width: 280px;
+    }
+    .about-us p {
+        width: 200px;
+    }    
+}
+/*=====================iPhone 12/13/14, 12/13 Pro=================================*/
+@media(max-width:390px){
+    .home{
+        height: 65dvh;
+    }
+    .appointment,
+    .salon{
+        height: 50dvh;
+    }
+    .desings{
+        height: 60dvh;
+    }
+    .desings-text h3 {
+        margin-top: 20px;
+    }
+    
 }
