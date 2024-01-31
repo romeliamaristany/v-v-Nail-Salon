@@ -14,13 +14,12 @@ ScrollReveal().reveal('.title-scroll', {delay:100 , origin: 'right'})
 ScrollReveal().reveal('.diamond', {delay: 600 , origin: 'left'})
 ScrollReveal().reveal('.p-scroll', {delay:600 , origin: 'left'})
 ScrollReveal().reveal('.logo-img', {delay: 500, origin: 'rigth'})
-ScrollReveal().reveal('.img-salon', {delay:600 , origin:'left'})
-ScrollReveal().reveal('.img-desings', {delay:600, origin: 'rigth'})
-//ScrollReveal().reveal('.nail-price' , {delay:300, origin: 'bottom'})
+ScrollReveal().reveal('.img-salon', {delay:500 , origin:'left'})
+ScrollReveal().reveal('.img-desings', {delay:500, origin: 'rigth'})
+ScrollReveal().reveal('.indications-scroll', {delay:500, origin: 'rigth'})
 
 ///////////////////////////SHOW MENU/////////////////////////////////////////////
 document.getElementById('button-menu').addEventListener('click', ()=>{
-    console.log('dsfdsfsdf')
     menu.classList.toggle('active')
     mainPage.classList.toggle('blur')
 });

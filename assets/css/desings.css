@@ -1,0 +1,145 @@
+@import url(fontawesome-all.min.css);
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+    --main-color: #fee0f8;
+    --title-color: #930b78;
+    --hoover-color: #580949;
+    --p-color: #413d3d;
+
+}
+body{
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    background-color: var(--main-color);
+}
+
+.slider-info{
+    margin-top: 4.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.slider-info h3{
+    color: var(--title-color);
+    text-align: center;
+    padding: 0 10px 0 10px;
+}
+.slider-info p{
+    color: var(--p-color);
+    padding: 0 20px 0 20px;
+    
+}
+
+   /*==================DESINGS CARRUSEL=========================*/
+    .slider{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        overflow-y: hidden;
+        align-items: center;
+        padding-top: 6%;
+    }
+    .slider-img{
+        flex: 1 0 auto;
+        background-color: var(--main-color);
+        /*width: 100%;*/
+        width: auto;
+        height: 400px;
+    }
+    .slider-img img{
+      /*  width: 100%;*/
+      width: auto;
+      height: 100%;
+      padding: 10px;
+        
+    }
+    .indications{
+        display: flex;
+        align-items: center;
+        padding-top: 20px;
+        justify-content: center;
+    }
+    .indications p{
+        color: var(--title-color);
+        font-size: 16px;
+    }
+    .indications i{
+        color: var(--title-color);
+        font-size: 27px;
+    }
+    
+@media(min-width:1150px){
+    .slider-info{
+        margin-top: 7.5rem;
+    }
+    .slider-info p{
+        padding: 0 60px 0 60px;
+    }
+    .slider{
+        padding-top: 3%;
+    }
+}
+@media(max-width:950px){
+    header{
+        height: 40px;
+    }
+    .links button{
+        border: none;
+        margin-bottom: 0;
+    }
+    .nails-name{
+        height: 20px;
+    }
+}
+@media(min-width:875px){
+    .slider-info{
+        margin-top: 6rem;
+    }
+}
+@media(min-width:800px){
+    .slider-info h3,
+    .slider-info p{
+        font-size: 23px;
+        
+    }
+    .indications p{
+        font-size: 20px;
+    }
+}
+@media(min-width:500px){
+    .slider-info p {
+        padding: 0 45px 0 45px;
+        text-align: center;
+    }
+}
+@media(max-width:500px){
+    .slider-info h3{
+        font-size: 18px;
+        width: 350px;
+        font-size: 17px;
+    }
+    .slider-info p{
+        text-align: justify;
+        font-size: 16px;
+    }
+
+}
+@media (max-width:375px){
+    .slider-img{
+        height: 350px;
+    }
+}

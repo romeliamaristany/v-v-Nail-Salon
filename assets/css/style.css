@@ -60,13 +60,9 @@ button{
     font-size: 15px;
     text-transform: uppercase;
     padding: 10px 15px;
-    border: 1px solid #930b78;
+    border: none;
     border-radius: 10px;
-    margin-bottom: 20px;
     cursor: pointer;
-}
-button:hover{
-    background-color: #fff2fd;
 }
 .blur{
     filter: blur(5px);
@@ -79,14 +75,20 @@ header{
     width: 100%;
     padding: 10px;
     z-index: 100000;
-    height: 60px;
+    height: 40px;
     align-items: center;
 }
 .header-bg{
     background-color: var(--main-color);
 }
+.nails-name h3 a{
+    padding: 10px 15px;
+}
 .nails-name h3 a:hover{
     color: white;
+}
+.nails-name h3{
+    height: 15px;
 }
 .button-menu{
     font-size: 0.8rem;
@@ -94,12 +96,10 @@ header{
     background-color: transparent;
 }
 .button-menu:hover{
-    background-color: transparent;
     color: white;
-    border:1px solid white;
 }
 .button-menu i{
-    font-size: 20px;
+    font-size: 30px;
   
 }
 /*===========NAVBAR======================*/
@@ -218,6 +218,9 @@ nav{
 .appointment-text p{
     width: 450px;
     margin-bottom: 10px;
+}
+.appointment-text button{
+    border: 1px solid var(--hoover-color);
 }
 .appointment-img{
     display: flex;
@@ -381,6 +384,7 @@ nav{
  margin: 10px 0 5px 0;
 }
 .nail-price button{
+    border: 1px solid var(--hoover-color);
     width: 200px;
     align-self: center; 
     margin-top: 15px;
@@ -440,6 +444,7 @@ nav{
 .about h3{
     width: auto;
 }
+/*////////////////////////////DESINGS CARRUSEL//////////////////////////////////////////*/
 
 /*/////////////////////RESPONSIVE///////////////////////////////////*/
 /*
@@ -1116,7 +1121,7 @@ nav{
     }
     .desings{
         grid-template-columns: 1fr;
-        height: 45dvh;
+        height: 50dvh;
         gap: 1.5em;
     }
     .desings-img{
@@ -1135,8 +1140,9 @@ nav{
         justify-content: center;
         align-items: center;
     }
-    .desings-texth3{
-        margin-bottom: 8px;
+    .desings-text h3{
+        margin-bottom: 10px;
+        margin-top: 20px;
     }
     .nails-price{
         grid-template-columns: 1fr;
@@ -1514,9 +1520,7 @@ nav{
     .nail-price p{
         width: 320px;
     }
-        
 
-      
 }
 /*==================IPHONE 11=========================*/
 @media(max-width:415px){
