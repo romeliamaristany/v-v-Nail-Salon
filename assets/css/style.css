@@ -159,7 +159,7 @@ nav{
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    height: 60dvh;
+    height: 442px;
     display: flex;
     align-items: center;
 }
@@ -196,7 +196,7 @@ nav{
     position: absolute;
     width: 100%;
     height: 80px;
-    top: -80px;
+    top: -79px;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:white%3B' /%3E%3C/svg%3E");
     background-position: center;
     background-repeat: no-repeat;
@@ -208,7 +208,7 @@ nav{
     position: absolute;
     width: 100%;
     height: 80px;
-    bottom: -0px ;
+    bottom: -1px ;
     background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23fee0f8%3B' /%3E%3C/svg%3E");
     background-position: center;
     background-repeat: no-repeat;
@@ -292,7 +292,7 @@ nav{
     position: absolute;
     width: 100%;
     height: 80px;
-    bottom: -0px ;
+    bottom: -1px ;
     background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23fee0f8%3B' /%3E%3C/svg%3E");
     background-position: center;
     background-repeat: no-repeat;
@@ -323,6 +323,9 @@ nav{
 }
 
 /*====================PRICE=========================*/
+.small-movil{
+    display: none;
+}
 .price{
     background-color: var(--main-color);
     position: relative;
@@ -347,7 +350,7 @@ nav{
     width: 750px;
 }
 .price-text p{
-    width: 750px;
+    width: 700px;
   /*  align-self: center;*/
     margin-bottom: 20px;
 }
@@ -375,7 +378,7 @@ nav{
 }
 .nail-price h4,
 .nail-price span{
-    padding-left: 20px;
+    padding: 0 15px 0 15px;
     margin-top: 10px;
 }
 .nail-price p{
@@ -388,13 +391,8 @@ nav{
     width: 200px;
     align-self: center; 
     margin-top: 15px;
+    margin-bottom: 15px;
 }
-/*===================ABOUT US=====================*/
-/*.contact{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}*/
 .contact{
     display: flex;
     flex-direction: column;
@@ -1013,12 +1011,538 @@ nav{
 }
 */
 
-/*=========================RESET BACKGROUND ATTACHTMENT================================*/
+@media (max-width:1100px){
+    .appointment-img img {
+        width: 180px;
+    }
+    .salon-text p {
+        width: 430px;
+    }
+    .desings-img img{
+        width: 180px;
+    }
+    .price-text p{
+        width: 650px;
+    }
+    .nail-price,
+    .nail-price img{
+        width: 320px;
+    }
+}
+@media (max-width:1030px){
+    section {
+        padding: 0 15% 50px 15%;
+    }
+    .price-text p {
+        width: 670px;
+    }
+    .nail-price p{
+        width: 260px;
+    }
+}
+@media (max-width:945px){
+    .price-text p {
+        width: 650px;
+    }
+}
+@media (max-width:920px){
+    .salon-text p {
+        width: 420px;
+    }
+    .salon-img img,
+    .desings-img img {
+        width: 170px;
+    }
+    .price-text p {
+        width: 630px;
+    }
+    .nail-price, 
+    .nail-price img {
+        width: 315px;
+    }
+}
+@media (max-width:905px){
+    .appointment-text p,
+    .desings-text p {
+        width: 420px;
+    }
+    .price-text p {
+        width: 610px;
+    }
+    .nail-price, 
+    .nail-price img {
+        width: 300px;
+    }
+}
+@media (max-width:895px){
+    .home{
+        height: 420px;
+    }
+    .salon-text p, 
+    .appointment-text p,
+    .desings-text p {
+        width: 380px;
+    }
+    .price-text,
+    .price-text p {
+        width: 100%;
+    }
+    .nail-price, 
+    .nail-price img {
+        width: 100%;
+    }
+}
+@media (max-width:810px){
+    .salon-text p, .appointment-text p, .desings-text p {
+        width: 360px;
+    }
+    .nail-price p {
+        width: 249px;
+    }
+}
+@media (max-width:760px){
+    .salon-text p, .appointment-text p, .desings-text p {
+        width: 330px;
+    }
+    .nail-price p {
+        width: 240px;
+    }
+    .about-us p{
+        width: 100%;
+    }
+}
+@media (max-width:725px){
+    .home-text p{
+        font-size: 15px;
+    }
+    .appointment-img img {
+        width: 160px;
+    }
+    .appointment-text p{
+        width: 330px;
+    }
+    .salon-img img, .desings-img img {
+        width: 160px;
+    }
+    .salon-text p, .desings-text p {
+        width: 320px;
+    }
+    .nail-price p {
+        width: 240px;
+        padding: 0 10px 0 10px;
+    }
+}
+
 @media (max-width:700px){
     .home{
         background-attachment: unset;
     }
+    .appointment-text p {
+        width: 300px;
+        font-size: 17px;
+    }
+    .salon-text p, .desings-text p {
+        width: 300px;
+        font-size: 17px;
+    }
+    .appointment-img img,
+    .salon-img img, 
+    .desings-img img {
+        width: 140px;
+    }
+    .price-text p{
+        font-size: 17px;
+    }
+    .nails-price{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .nail-price{
+        width: 80%;
+    }
+    .nail-price img{
+        width: 100%;
+    }
+    .nail-price h4,
+    .nail-price span{
+        height: auto;
+        font-size: 17px;
+    }
+    .nail-price p{
+        width: 100%;
+        font-size: 17px;
+    }
+    .about-us{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .QR a{
+        font-size: 15px;
+    }
+    .designer p,
+    .about-us p{
+        font-size: 17px;
+    }
+    
 }
+@media (max-width:620px){
+    .home {
+        height: 400px;
+    }
+    .home-text p {
+        font-size: 14px;
+    }
+    .appointment-text p{
+        width: 280px;
+        font-size: 16px;
+    }
+    .salon,
+    .desings{
+        gap: 1rem;
+    }
+    .salon-text p, .desings-text p {
+        width: 280px;
+        font-size: 16px;
+    }
+    .price-text p{
+        font-size: 16px;
+
+    }
+}
+@media (max-width:590px){
+    section {
+        padding: 0 10% 50px 10%;
+    }
+}
+@media (max-width:530px){
+    .appointment{
+        display: flex;
+        flex-direction: column;
+    }
+    .appointment-img {
+        position: absolute;
+        z-index: 1;
+        left: 19em;
+        bottom: 14em;
+    }
+    .appointment-text{
+        padding-top: 4.5em;
+    }
+    .appointment-text p{
+        width: 100%;
+    }
+    .salon{
+        display: flex;
+        flex-direction: column;
+    }
+    .salon-img{
+        align-self: self-start;
+        position: absolute;
+        bottom: 12em;
+    }
+    .salon-text{
+        position: absolute;
+        top: 10em;
+    }
+    .salon-text h3{
+        position: absolute;
+        bottom: 6em;
+        left: 9em;
+    }
+    .salon-text p{
+        width: 420px;
+    }
+    .desings{
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+    }
+    .desings-img{
+        grid-area: 1/1/2/2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .desings-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .desings-text p{
+        width: 100%;
+    }
+}
+@media (max-width:505px){
+    .salon-text p {
+        width: 400px;
+    }
+}
+@media (max-width:480px){
+    .home-text h1 {
+        font-size: 2.5rem;
+    }
+    .nails-name h3 a {
+        font-size: 15px;
+    }
+    .home-text{
+        padding-top: 20px;
+    }
+    .home-text p {
+        font-size: 13px;
+    }
+    .appointment-img{
+        left: 17.5em;
+    }
+    .salon-text p {
+        width: 380px;
+    }
+}
+@media (max-width:440px){
+    .appointment-img {
+        left: 15.5em;
+    }
+    .salon-text p {
+        width: 350px;
+    }
+    .appointment-text h3,
+    .salon-text h3,
+    .desings-text h3,
+    .price-text h3,
+    .about h3 {
+        font-size: 16px;
+    }
+    .salon-text h3{
+        bottom: 8em;
+    }
+    .price{
+        padding-top: 25px;
+    }
+}
+@media (max-width:420px){
+    .salon-text p {
+        width: 330px;
+    }
+    .salon{
+        height: 55vh;
+    }
+    .salon-text{
+        top: 10.5em;
+    }
+    .salon-img{
+        position: absolute;
+        bottom: 14em;
+    }
+}
+@media (max-width:395px){
+    .appointment-img {
+        left: 14.5em;
+    }
+    .appointment-img img, .salon-img img, .desings-img img {
+        width: 120px;
+    }
+    .salon-text h3{
+        left: 7em;
+    }
+    .salon-text p {
+        width: 300px;
+    }
+    .designer p, .about-us p {
+        font-size: 15px;
+    }
+}
+@media (max-width:380px){
+    .home-text p {
+        font-size: 12px;
+    }
+    .appointment-text h3, 
+    .desings-text h3,
+    .price-text h3, 
+    .about h3{
+        font-size: 15px;
+    }
+    .appointment-text p,
+    .salon-text p,
+    .desings-text p,
+    .price-text p{
+        font-size: 15px;
+    }
+    .appointment-text button{
+        font-size: 12px;
+    }
+    .salon-text h3 {
+        left: 5em;
+        bottom: 7em;
+        width: 170px;
+        background: var(--main-color);
+        border-radius: 7%;
+        width: auto;
+    }
+    .nail-price button{
+        font-size: 12px;
+        width: 170px;
+    }
+    .designer p{
+        width: 200px;
+        text-align: center;
+    }
+}
+@media (max-width:360px){
+    .appointment-img {
+        left: 13.5em;
+    }
+    .appointment-img img{
+        width: 110px;
+    }
+    .salon-text p{
+        width: 280px;
+    }
+}
+@media (max-width:340px){
+    .home {
+        height: 415px;
+    }
+    .button-menu{
+        padding: 0;
+    }
+    .appointment-img {
+        left: 12.5em;
+    }
+    .salon-text p {
+        width: 260px;
+    }
+    .salon-text h3 {
+        left: 4em;
+        bottom: 7em;
+        width: 170px;
+        background: var(--main-color);
+        border-radius: 7%;
+        width: auto;
+    }
+        
+}
+@media (max-width:320px){
+    .appointment-img {
+        left: 11.5em;
+    }
+    .nail-price p{
+        display: none;
+    }
+    .small-movil{
+        display: unset;
+    }
+    .nail-price h4{
+        font-size: 15px;
+        text-align: center;
+    }
+    .designer p{
+        width: 220px;
+    }
+    .nail-price button{
+        padding: 5px 10px 5px 10px;
+        width: 160px;
+    }
+    .nail-price h4{
+        margin-bottom: 0;
+    }
+}
+@media (max-width:310px){
+    .home {
+        height: 400px;
+    }
+    .appointment-img {
+        left: 11.5em;
+        bottom: 15em;
+    }
+}
+@media (max-width:295px){
+    .home-text h1 {
+        font-size: 2.3rem;
+    }
+    .home-text p {
+        font-size: 11px;
+    }
+    .appointment-img {
+        left: 10.5em;
+    }
+    .salon-text p {
+        width: 240px;
+    }
+}
+@media (max-width:285px){
+    .appointment-text {
+        padding-top: 4em;
+    }
+    .appointment-img {
+        left: 9.5em;
+    }
+    .appointment-img img {
+        width: 100px;
+    }
+    .salon{
+        height: 60vh;
+    }
+    .salon-img{
+        position: unset;
+        display: flex;
+        align-self: center;
+    }
+    .salon-text{
+        position: unset;
+    }
+    .salon-text h3{
+        position: unset;
+        text-align: center;
+    }
+    .salon-text p {
+        width: 100%;
+    }
+    .desings{
+        height: 70vh;
+    }
+    .desings-text h3{
+        text-align: center;
+    }
+    .nail-price button {
+        padding: 5px;
+        width: 140px;
+    }
+    
+}
+@media (max-width:250px){
+    .home {
+        height: 350px;
+    }
+    .appointment{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+        height: 350px;
+    }
+    .appointment-img{
+        position: unset;
+        grid-area: 1/1/2/2;
+    }
+    .appointment-text{
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+
+
+
+/*
 @media (max-width:430px){
     section {
         padding: 0 10% 50px 10%;
@@ -1055,7 +1579,7 @@ nav{
     }
     .appointment{
        /* padding-top: 50px;*/
-        grid-template-columns: 1fr;
+  /*      grid-template-columns: 1fr;
         gap: 0;
         height: 40dvh;
     }
@@ -1179,7 +1703,7 @@ nav{
     .designer p{
         font-size: 15px;
     }
-}
+}*//*
 @media (max-width:390px){
     section {
         padding: 0 10% 50px 10%;
@@ -1213,7 +1737,7 @@ nav{
     }
     .appointment{
        /* padding-top: 50px;*/
-        grid-template-columns: 1fr;
+ /*       grid-template-columns: 1fr;
         gap: 0;
         height: 40dvh;
     }
@@ -1493,7 +2017,7 @@ nav{
 
 
 /*==================IPHONE 14 PROMAX=========================*/
-@media(max-width: 430px){
+/*@media(max-width: 430px){
     .home{
         height: 500px;
     }
@@ -1521,8 +2045,8 @@ nav{
         width: 320px;
     }
 
-}
-/*==================IPHONE 11=========================*/
+}*/
+/*==================IPHONE 11=========================*//*
 @media(max-width:415px){
     .home{
         height: 500px;
@@ -1559,8 +2083,8 @@ nav{
     .about-us p {
         width: 200px;
     }    
-}
-/*==================IPHONE 14 PRO=========================*/
+}*/
+/*==================IPHONE 14 PRO=========================*//*
 @media(max-width:395px){
     .home{
         height: 450px;
@@ -1611,8 +2135,8 @@ nav{
     .about-us p {
         width: 200px;
     }    
-}
-/*=====================iPhone 12/13/14, 12/13 Pro=================================*/
+}*/
+/*=====================iPhone 12/13/14, 12/13 Pro=================================*//*
 @media(max-width:390px){
     .home{
         height: 450px;
@@ -1628,10 +2152,10 @@ nav{
         margin-top: 20px;
     }
 
-}
-/*=====================IPHONE 11PRO=================================*/
+}*/
+/*=====================IPHONE 11PRO=================================*//*
 @media (max-width:375px){
     .home{
         height: 400px;
     }
-}
+}*/
