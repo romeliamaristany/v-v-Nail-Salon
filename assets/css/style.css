@@ -123,6 +123,9 @@ nav{
 .active{
     display: block;
 }
+.close-icon{
+    position: relative;
+}
 .close-icon i{
     font-size: 25px;
     position: absolute;
@@ -157,7 +160,6 @@ nav{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     width: 100%;
     height: 442px;
     display: flex;
@@ -189,7 +191,7 @@ nav{
    align-items: center;
    gap: 1.5rem;
    position: relative;
-   height: 50dvh;
+   height: 50vh;
 }
 .appointment::after{
     content: '';
@@ -240,7 +242,7 @@ nav{
     gap: 1.5rem;
   /*  justify-items: center;*/
     position: relative;
-    height: 50dvh;
+    height: 50vh;
 }
 .salon-img img{
     width: 200px;
@@ -1224,10 +1226,12 @@ nav{
         flex-direction: column;
     }
     .appointment-img {
-        position: absolute;
+        position: relative;
         z-index: 1;
-        left: 19em;
-        bottom: 14em;
+    }
+    .appointment-img img{
+        bottom: 18em;
+        left: 8em;
     }
     .appointment-text{
         padding-top: 4.5em;
@@ -1241,12 +1245,10 @@ nav{
     }
     .salon-img{
         align-self: self-start;
-        position: absolute;
-        bottom: 12em;
+        position: relative;
     }
     .salon-text{
-        position: absolute;
-        top: 10em;
+        position: relative;
     }
     .salon-text h3{
         position: absolute;
@@ -1297,17 +1299,20 @@ nav{
     .home-text p {
         font-size: 13px;
     }
-    .appointment-img{
-        left: 17.5em;
+    .appointment-img img{
+        bottom: 18em;
     }
     .salon-text p {
         width: 380px;
     }
 }
-@media (max-width:440px){
-    .appointment-img {
-        left: 15.5em;
+@media (max-width:465px){
+    .appointment-img img {
+        bottom: 19em;
     }
+}
+
+@media (max-width:440px){
     .salon-text p {
         width: 350px;
     }
@@ -1332,17 +1337,13 @@ nav{
     .salon{
         height: 55vh;
     }
-    .salon-text{
-        top: 10.5em;
-    }
     .salon-img{
-        position: absolute;
-        bottom: 14em;
+        position: relative;
     }
 }
 @media (max-width:395px){
-    .appointment-img {
-        left: 14.5em;
+    .appointment-img img{
+        left: 6em;
     }
     .appointment-img img, .salon-img img, .desings-img img {
         width: 120px;
@@ -1394,11 +1395,9 @@ nav{
     }
 }
 @media (max-width:360px){
-    .appointment-img {
-        left: 13.5em;
-    }
     .appointment-img img{
         width: 110px;
+        bottom: 18em;
     }
     .salon-text p{
         width: 280px;
@@ -1410,9 +1409,6 @@ nav{
     }
     .button-menu{
         padding: 0;
-    }
-    .appointment-img {
-        left: 12.5em;
     }
     .salon-text p {
         width: 260px;
@@ -1428,8 +1424,8 @@ nav{
         
 }
 @media (max-width:320px){
-    .appointment-img {
-        left: 11.5em;
+    .appointment-text {
+        padding-top: 3.5em;
     }
     .nail-price p{
         display: none;
@@ -1456,10 +1452,6 @@ nav{
     .home {
         height: 400px;
     }
-    .appointment-img {
-        left: 11.5em;
-        bottom: 15em;
-    }
 }
 @media (max-width:295px){
     .home-text h1 {
@@ -1468,8 +1460,9 @@ nav{
     .home-text p {
         font-size: 11px;
     }
-    .appointment-img {
-        left: 10.5em;
+    .appointment-img img {
+        bottom: 19em;
+        left: 5em;
     }
     .salon-text p {
         width: 240px;
@@ -1478,9 +1471,6 @@ nav{
 @media (max-width:285px){
     .appointment-text {
         padding-top: 4em;
-    }
-    .appointment-img {
-        left: 9.5em;
     }
     .appointment-img img {
         width: 100px;
@@ -1515,6 +1505,11 @@ nav{
     }
     
 }
+@media (max-width:270px){
+    .appointment-img img {
+        left: 4.5em;
+    }
+}
 @media (max-width:250px){
     .home {
         height: 350px;
@@ -1526,8 +1521,11 @@ nav{
         height: 350px;
     }
     .appointment-img{
-        position: unset;
         grid-area: 1/1/2/2;
+    }
+    .appointment-img img{
+        bottom: 1em;
+        left: 0.5em;
     }
     .appointment-text{
         padding-top: 0;

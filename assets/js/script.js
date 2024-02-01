@@ -14,8 +14,6 @@ ScrollReveal().reveal('.title-scroll', {delay:100 , origin: 'right'})
 ScrollReveal().reveal('.diamond', {delay: 100 , origin: 'left'})
 ScrollReveal().reveal('.p-scroll', {delay:100 , origin: 'left'})
 ScrollReveal().reveal('.logo-img', {delay: 100, origin: 'rigth'})
-ScrollReveal().reveal('.img-salon', {delay:100 , origin:'left'})
-ScrollReveal().reveal('.img-desings', {delay:100, origin: 'rigth'})
 ScrollReveal().reveal('.indications-scroll', {delay:100, origin: 'rigth'})
 
 ///////////////////////////SHOW MENU/////////////////////////////////////////////
