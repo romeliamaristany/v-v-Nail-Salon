@@ -95,9 +95,7 @@ header{
     text-align: center;
     background-color: transparent;
 }
-.button-menu:hover{
-    color: white;
-}
+
 .button-menu i{
     font-size: 30px;
   
@@ -122,9 +120,6 @@ nav{
 }
 .active{
     display: block;
-}
-.close-icon{
-    position: relative;
 }
 .close-icon i{
     font-size: 25px;
@@ -1234,7 +1229,7 @@ nav{
         left: 8em;
     }
     .appointment-text{
-        padding-top: 4.5em;
+        padding-top: 5.5em;
     }
     .appointment-text p{
         width: 100%;
@@ -1263,7 +1258,7 @@ nav{
         gap: 0.5rem;
         justify-content: center;
         align-items: center;
-        height: 60vh;
+        height: 55vh;
     }
     .desings-img{
         grid-area: 1/1/2/2;
@@ -1308,7 +1303,7 @@ nav{
 }
 @media (max-width:465px){
     .appointment-img img {
-        bottom: 19em;
+        bottom: 20em;
     }
 }
 

@@ -26,12 +26,14 @@ document.getElementById('button-menu').addEventListener('click', ()=>{
 document.getElementById('close-icon').addEventListener('click', ()=>{
     menu.classList.remove('active')
     mainPage.classList.remove('blur')
+
 });
 
 ////////////////////////////CLOSE MENU WHEN SCROLLING/////////////////////////////////////////////////////////
 window.onscroll = () =>{
     menu.classList.remove('active')
     mainPage.classList.remove('blur')
+
 };
 
 //////////////////////////////CHANGE HEADER BACKGROUND///////////////////////////////////////////////
